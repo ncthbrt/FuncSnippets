@@ -37,5 +37,7 @@ namespace FuncSnippets
             }
             return current._val;
         }
+
+        public static implicit operator Recursive<T>(T val)=>new Recursive<T>(val);        
     }
 }

@@ -15,8 +15,7 @@ namespace FuncSnippets
         public static Recursive<BigInteger> Fibonacci(BigInteger n, BigInteger product) =>
             n < 2 ?
                 returns(product)
-                : recurse(Fibonacci, n - 1, n*product);
-
+                : recurse(Fibonacci, n - 1, n*product);            
 
         public static BigInteger NaiveFibonacci(BigInteger n, BigInteger product) =>
             n < 2 ?
@@ -27,11 +26,10 @@ namespace FuncSnippets
         public static void Main(string[] args)
         {
             #region Recursive Example
-
             {
                 WriteLine(Fibonacci(12345));
-                //This will blow the stack if you uncomment it
-                //WriteLine(NaiveFibonacci(12345,1));
+                // The line below will blow the stack if you uncomment it
+                // WriteLine(NaiveFibonacci(12345,1));
             }
 
             #endregion Recursive Example
