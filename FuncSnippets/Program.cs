@@ -30,7 +30,7 @@ namespace FuncSnippets
 
             {
                 WriteLine(Fibonacci(12345));
-                //This will blow the stack if you uncomment it
+                //This should blow the stack if you uncomment it, if not add an extra digit :P
                 //WriteLine(NaiveFibonacci(12345,1));
             }
 
