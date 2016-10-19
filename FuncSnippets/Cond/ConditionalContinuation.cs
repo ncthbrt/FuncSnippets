@@ -4,7 +4,7 @@ using static LanguageExt.Prelude;
 
 namespace FuncSnippets
 {
-    public class ConditionalContinuation<T, TR>
+    public struct ConditionalContinuation<T, TR>
     {
         internal Option<TR> Result { get; }
         public T Value { get; }
@@ -16,11 +16,11 @@ namespace FuncSnippets
         }
 
 
-        public ConditionalContinuation(ConditionalContinuation<T, TR> prevConditionalContinuation, TR result)
-        {
-            Value = prevConditionalContinuation.Value;
-            Result = result;
-        }
+        // public ConditionalContinuation(ConditionalContinuation<T, TR> prevConditionalContinuation, TR result)
+        // {
+        //     Value = prevConditionalContinuation.Value;
+        //     Result = result;
+        // }
 
         public ConditionalContinuation(T value, TR result)
         {
