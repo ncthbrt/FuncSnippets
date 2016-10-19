@@ -56,7 +56,7 @@ namespace FuncSnippets
             }
             ReadLine();
 
-            #endregion Recursive Example
+            #endregion Cond Example
         }
     }
 }
