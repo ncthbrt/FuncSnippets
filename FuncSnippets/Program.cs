@@ -28,8 +28,9 @@ namespace FuncSnippets
             #region Recursive Example
             {
                 WriteLine(Fibonacci(12345));
-                // The line below will blow the stack if you uncomment it
-                // WriteLine(NaiveFibonacci(12345,1));
+
+                //This should blow the stack if you uncomment it, if not add an extra digit :P
+                //WriteLine(NaiveFibonacci(12345,1));
             }
 
             #endregion Recursive Example
@@ -51,10 +52,10 @@ namespace FuncSnippets
                             .Else((x) => $"{x} is quite close to 1.0")
                     );
                 }
-            }
+            }                        
+            #endregion Cond Example
+            
             ReadLine();
-
-            #endregion Recursive Example
         }
     }
 }
